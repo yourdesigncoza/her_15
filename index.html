@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HER XV - Strength. Style. Squad.</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Phoenix CSS -->
+    <link rel="stylesheet" href="phoenix.css?v=1.0.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=2.3.0">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold navbar-brand-custom" href="#">HER XV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#squad">Squad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="brand-logo">HER XV</h1>
+                    <p class="brand-tagline">STRENGTH. STYLE. SQUAD.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary-custom btn-custom">Shop Now</a>
+                        <a href="https://www.instagram.com/herfifteenxv" target="_blank" class="btn btn-outline-custom btn-custom">Join The Squad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title">About HER XV</h2>
+                    <p class="movement-text">HER XV IS MORE THAN APPAREL — IT'S A MOVEMENT FOR WOMEN WHO PLAY BOLD AND LIVE STRONGER.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="lead">HER XV was born from a love of rugby and passion to create a space for women in the game. We believe rugby isn't just a sport — it's a community, a culture and a powerful platform for women to be seen, celebrated, and supported.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Every piece we create carries the spirit of the game and the heart of the women who play it. This is more than clothing — it's a movement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="shop" class="product-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Collections</h2>
+            </div>
+            
+            <!-- The Kick Off Collection -->
+            <div class="mb-5">
+                <h3 class="text-center mb-4" style="font-size: 2rem; font-weight: 600;">THE KICK OFF COLLECTION</h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(1)">
+                                <img src="images/resize-medium/HER_XV_White.png" alt="Her XV" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Her XV</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(2)">
+                                <img src="images/resize-medium/HER_WORLD_CUP_White.png" alt="Her World Cup" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Her World Cup</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(3)">
+                                <img src="images/resize-medium/HISTORY_MAKERS_White.png" alt="History Makers" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">History Makers</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(4)">
+                                <img src="images/resize-medium/BLOM_SQUAD_White.png" alt="Blom Squad" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Blom Squad</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Fun XV Collection -->
+            <div>
+                <h3 class="text-center mb-4" style="font-size: 2rem; font-weight: 600;">THE FUN XV COLLECTION</h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(5)">
+                                <img src="images/resize-medium/RUGBEE_HONEY_BLACK_on_White.png" alt="RugBee Honey Black" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">RugBee Honey Black</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(6)">
+                                <img src="images/resize-medium/RUGBEE_HONEY_GOLD_WHITE.png" alt="RugBee Honey Gold" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">RugBee Honey Gold</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(7)">
+                                <img src="images/resize-medium/BLOM_SQUAD_2_0_White.png" alt="Blom Squad 2.0" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Blom Squad 2.0</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(8)">
+                                <img src="images/resize-medium/RUGBY_GOOSE_White.png" alt="Rugby Goose" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rugby Goose</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(9)">
+                                <img src="images/resize-medium/RUGBEE_TRY_BLACK_on_White.png" alt="RugBee Try Black" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">RugBee Try Black</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card product-card">
+                            <div class="product-image" onclick="openProductModalById(10)">
+                                <img src="images/resize-medium/RUGBEE_TRY_GOLD_on_White.png" alt="RugBee Try Gold" sizes="(max-width: 768px) 300px, 400px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">RugBee Try Gold</h5>
+                                <p class="price-tag">R399.00</p>
+                                <a href="#contact" class="btn btn-dark btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Palette and Size Chart -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card product-card">
+                        <div class="product-image" onclick="openChartModal('images/resize-large/resized/COLOR PALETTE.resized.png', 'Colour Chart')">
+                            <img src="images/resize-medium/COLOR PALETTE.png" alt="Colour Chart" sizes="(max-width: 768px) 300px, 400px">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Colour Chart</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card product-card">
+                        <div class="product-image" onclick="openChartModal('images/resize-large/resized/Premium T-Shirt Size Chart.resized.png', 'Sizes Chart')">
+                            <img src="images/resize-medium/Premium T-Shirt Size Chart.png" alt="Sizes Chart" sizes="(max-width: 768px) 300px, 400px">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sizes Chart</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="lead"><strong>Sizes Available:</strong> XS, S, M, L, XL, XXL<br>
+                <strong>All items:</strong> R399.00 each (excl. shipping)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squad Section -->
+    <section id="squad" class="squad-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">JOIN THE XV SQUAD</h2>
+                <p class="movement-text">WEAR IT. OWN IT. SHARE IT.</p>
+                <a href="https://www.instagram.com/herfifteenxv" target="_blank" class="btn btn-outline-custom btn-custom mb-5">Follow @herfifteenxv</a>
+                
+                <div class="community-grid">
+                    <div class="community-item has-image" onclick="openInstagramModal('images/instagram/insta_01.png')">
+                        <img src="images/instagram/insta_01.resized.png" alt="Squad Member 1" class="instagram-image">
+                    </div>
+                    <div class="community-item has-image" onclick="openInstagramModal('images/instagram/insta_02.png')">
+                        <img src="images/instagram/insta_02.resized.png" alt="Squad Member 2" class="instagram-image">
+                    </div>
+                    <div class="community-item has-image" onclick="openInstagramModal('images/instagram/insta_03.png')">
+                        <img src="images/instagram/insta_03.resized.png" alt="Squad Member 3" class="instagram-image">
+                    </div>
+                    <div class="community-item has-image" onclick="openInstagramModal('images/instagram/insta_04.png')">
+                        <img src="images/instagram/insta_04.resized.png" alt="Squad Member 4" class="instagram-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Order Now</h2>
+                        <p class="lead">Ready to join the movement? Create your order below!</p>
+                    </div>
+
+                    <!-- Product Selection Section -->
+                    <div class="card border-0 shadow-lg mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Select Your Products</h4>
+                            
+                            <!-- Product Selection Grid -->
+                            <div class="row" id="productSelection">
+                                <!-- Products will be populated here -->
+                            </div>
+
+                            <!-- Add to Cart Form -->
+                            <div class="card bg-light mt-4" id="addToCartForm" style="display: none;">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <img id="selectedProductImage" src="" alt="" class="img-fluid rounded">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h5 id="selectedProductName"></h5>
+                                            <p class="text-muted mb-2" id="selectedProductPrice">R399.00</p>
+                                            
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Size</label>
+                                                    <select class="form-select" id="productSize">
+                                                        <option value="">Select Size</option>
+                                                        <option value="XS">XS</option>
+                                                        <option value="S">S</option>
+                                                        <option value="M">M</option>
+                                                        <option value="L">L</option>
+                                                        <option value="XL">XL</option>
+                                                        <option value="XXL">XXL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Quantity</label>
+                                                    <div class="input-group">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(-1)">-</button>
+                                                        <input type="number" class="form-control text-center" id="productQuantity" value="1" min="1" max="10">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(1)">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <button type="button" class="btn btn-phoenix-success" onclick="addToCart()">
+                                                Add to Cart - <span id="itemTotal">R399.00</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Details Form -->
+                    <div class="card border-0 shadow-lg mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Your Details</h4>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="customerName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="customerName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="customerEmail" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="customerEmail" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="customerPhone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="customerPhone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="customerCity" class="form-label">City *</label>
+                                    <input type="text" class="form-control" id="customerCity" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="orderNotes" class="form-label">Special Instructions</label>
+                                    <textarea class="form-control" id="orderNotes" rows="3" placeholder="Any special requests or delivery instructions..."></textarea>
+                                </div>
+                                <!-- Hidden honeypot field to prevent spam -->
+                                <input type="text" name="website" id="website" style="position: absolute; left: -9999px; top: -9999px; opacity: 0;" tabindex="-1" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Order Summary Section -->
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Order Summary</h4>
+
+                            <!-- Cart Items -->
+                            <div id="cartItems">
+                                <div class="text-center text-muted py-4">
+                                    <i class="fas fa-shopping-cart fa-2x mb-2"></i>
+                                    <p>Your cart is empty</p>
+                                    <small><b>Select products to get started</b></small>
+                                </div>
+                            </div>
+
+                            <!-- Cart Total -->
+                            <div class="border-top pt-3 mt-3" id="cartTotal" style="display: none;">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-md-6">
+                                        <strong class="h5 mb-0">Total: <span id="grandTotal">R0.00</span></strong>
+                                    </div>
+                                    <div class="col-md-6 text-md-end">
+                                        <button type="button" class="btn btn-phoenix-primary me-2" onclick="sendOrder()">
+                                            Send Order via Email
+                                        </button>
+                                        <button type="button" class="btn btn-subtle-danger" onclick="clearCart()">
+                                            Clear Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning border-2 mt-4" style="background-color: #fff2d5; border-color: #e5780b;">
+                                <div class="d-flex align-items-start">
+                                    <!-- <div class="me-3">
+                                        <i class="fas fa-info-circle fa-2x text-warning"></i>
+                                    </div> -->
+                                    <div>
+                                        <h6 class="alert-heading mb-2">📦 How Your Order Works</h6>
+                                        <p class="mb-2"><strong>Order Processing:</strong></p>
+                                        <ul class="mb-2">
+                                            <li>Orders are processed via email confirmation.</li>
+                                            <li>We will contact you within 24 hours to confirm your order.</li>
+                                            <li>Payment accepted: EFT.</li>
+                                        </ul>
+                                        <p class="mb-2"><strong>Production:</strong></p>
+                                        <ul class="mb-2">
+                                            <li>Orders go into production after payment is received.</li>
+                                            <li>Lead Time is typically 3 – 5 business days.</li>
+                                        </ul>
+                                        <p class="mb-2"><strong>Delivery:</strong></p>
+                                        <ul class="mb-2">
+                                            <li>We use PUDO as our trusted delivery partner.</li>
+                                            <li>Collection point will be confirmed with your order.</li>
+                                            <li>Typical delivery time is 2 – 3 business days.</li>
+                                        </ul>
+                                        <p class="mb-0">
+                                            Questions? Email us at 
+                                            <a href="mailto:support@herfifteen.co.za" class="btn btn-phoenix-warning btn-sm">support@herfifteen.co.za</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>HER XV</h5>
+                    <p>Strength. Style. Squad.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.instagram.com/herfifteenxv" target="_blank" class="text-white text-decoration-none">
+                        Follow us on Instagram @herfifteenxv
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 HER XV. All rights reserved. More than apparel - it's a movement.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalProductImage" src="" alt="Product Image" class="img-fluid rounded mb-3">
+                    <h3 id="modalProductTitle" class="mb-3"></h3>
+                    <p id="modalProductPrice" class="price-tag mb-3"></p>
+                    <p class="lead mb-4">Available sizes: XS, S, M, L, XL, XXL</p>
+                    <a href="mailto:support@herfifteen.co.za?subject=HER XV Order&body=Hi there!%0D%0A%0D%0AI would like to order:%0D%0A%0D%0AName: %0D%0ASize: %0D%0AColour: %0D%0AQuantity: %0D%0A%0D%0AThank you!" class="btn btn-primary-custom btn-custom">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- HER XV Application JS -->
+    <script src="app.js?v=1.2.0"></script>
+</body>
+</html>

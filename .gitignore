@@ -1,0 +1,24 @@
+# Environment Variables
+.env
+
+# Composer Dependencies
+vendor/
+composer.lock
+
+# Log Files (keep structure but ignore content)
+logs/*.log
+!logs/.gitkeep
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Backup Files
+*.bak
+*.tmp

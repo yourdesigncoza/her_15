@@ -1,0 +1,20 @@
+{
+    "name": "her-xv/order-system",
+    "description": "HER XV Order Processing System with PHPMailer",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HerXV\\": "src/"
+        }
+    },
+    "require-dev": {},
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

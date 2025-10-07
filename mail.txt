@@ -1,0 +1,34 @@
+Username
+orders@herfifteen.co.za
+Incoming server
+mail.herfifteen.co.za
+Ports
+IMAP 993 / POP 995
+Outgoing server
+smtp.herfifteen.co.za
+Port
+SMTP 465 (authentication required)
+SSL / TLS
+On
+Password
+3l2252GYB8253s
+
+
+#############################
+
+
+
+Username
+support@herfifteen.co.za
+Incoming server
+mail.herfifteen.co.za
+Ports
+IMAP 993 / POP 995
+Outgoing server
+smtp.herfifteen.co.za
+Port
+SMTP 465 (authentication required)
+SSL / TLS
+On
+Password
+5UhEV1i4875291

@@ -1,0 +1,11 @@
+[2025-09-16 13:38:01] [IP: 102.67.178.186] Order processed successfully - HER20250916-9788F5 | Data: {"order_ref":"HER20250916-9788F5","customer":"John Montgomery","email":"laudes.michael@gmail.com","total":399,"items_count":1}
+[2025-09-16 13:49:12] [IP: 102.67.178.186] Order processed successfully - HER20250916-863865 | Data: {"order_ref":"HER20250916-863865","customer":"John Montgomery","email":"laudes.michael@gmail.com","total":1197,"items_count":2}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Cart data received | Data: [{"id":1758023822401,"productId":1,"name":"Her XV","price":399,"size":"M","quantity":2,"image":"images\/resize-medium\/HER_XV_White.png","total":798},{"id":1758023829570,"productId":8,"name":"Rugby Goose","price":399,"size":"S","quantity":1,"image":"images\/resize-medium\/RUGBY_GOOSE_White.png","total":399}]
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Processing cart item 0 | Data: {"id":1758023822401,"productId":1,"name":"Her XV","price":399,"size":"M","quantity":2,"image":"images\/resize-medium\/HER_XV_White.png","total":798}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Processed cart item 0 | Data: {"id":1758023822401,"productId":1,"name":"Her XV","price":399,"size":"M","quantity":2,"image":"images\/resize-medium\/HER_XV_White.png","total":798}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Processing cart item 1 | Data: {"id":1758023829570,"productId":8,"name":"Rugby Goose","price":399,"size":"S","quantity":1,"image":"images\/resize-medium\/RUGBY_GOOSE_White.png","total":399}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Processed cart item 1 | Data: {"id":1758023829570,"productId":8,"name":"Rugby Goose","price":399,"size":"S","quantity":1,"image":"images\/resize-medium\/RUGBY_GOOSE_White.png","total":399}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Building HTML for item 0 | Data: {"name":"Her XV","size":"M","quantity":2,"total":798}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Building HTML for item 1 | Data: {"name":"Her XV","size":"M","quantity":2,"total":798}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Generated order items HTML | Data: {"html_length":858}
+[2025-09-16 13:57:42] [IP: 102.67.178.186] Order processed successfully - HER20250916-65DE86 | Data: {"order_ref":"HER20250916-65DE86","customer":"John Montgomery","email":"laudes.michael@gmail.com","total":1197,"items_count":2}
