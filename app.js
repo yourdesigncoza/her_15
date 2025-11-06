@@ -105,14 +105,6 @@ const products = [
         largeImage: "images/HISTORY_MAKERS_White.resized.png",
         collection: "Kick Off"
     },
-    {
-        id: 4,
-        name: "History Makers",
-        price: 320,
-        image: "images/HISTORY_MAKERS_Mint_Green.png",
-        largeImage: "images/HISTORY_MAKERS_Mint_Green.png",
-        collection: "Kick Off"
-    },
     // BLOM SQUAD VARIANTS
     {
         id: 5,
@@ -246,6 +238,76 @@ const products = [
         image: "images/BRITS_White.png",
         largeImage: "images/BRITS_White.png",
         collection: "Maiden"
+    },
+    // HER XV SHIELD COLLECTION
+    {
+        id: 21,
+        name: "Everyone Watches Womens Rugby",
+        price: 320,
+        image: "images/everyone_watches_womens_rugby_white.png",
+        largeImage: "images/everyone_watches_womens_rugby_white.png",
+        collection: "Shield"
+    },
+    {
+        id: 22,
+        name: "Everyone Watches Womens Rugby",
+        price: 320,
+        image: "images/everyone_watches_womens_rugby_black.png",
+        largeImage: "images/everyone_watches_womens_rugby_black.png",
+        collection: "Shield"
+    },
+    {
+        id: 23,
+        name: "Springbok Women",
+        price: 320,
+        image: "images/springbok_woman.png",
+        largeImage: "images/springbok_woman.png",
+        collection: "Shield"
+    },
+    {
+        id: 24,
+        name: "Tackle The Stigma",
+        price: 320,
+        image: "images/tackle_the_stigma.png",
+        largeImage: "images/tackle_the_stigma.png",
+        collection: "Shield"
+    },
+    {
+        id: 25,
+        name: "Womenboks",
+        price: 320,
+        image: "images/womenboks.png",
+        largeImage: "images/womenboks.png",
+        collection: "Shield"
+    },
+    {
+        id: 26,
+        name: "Girl Power",
+        price: 320,
+        image: "images/girl_power.png",
+        largeImage: "images/girl_power.png",
+        collection: "Shield"
+    },
+    {
+        id: 27,
+        name: "Shield",
+        price: 320,
+        image: "images/shield.png",
+        largeImage: "images/shield.png",
+        collection: "Shield"
+    },
+    // BUCKET HAT
+    {
+        id: 28,
+        name: "HER XV Bokkie Bucket Hat",
+        price: 350,
+        image: "images/her_bokie_bucket_hat_01.jpg",
+        largeImage: "images/her_bokie_bucket_hat_01.jpg",
+        collection: "Accessories",
+        additionalImages: [
+            "images/her_bokie_bucket_hat_02.jpg",
+            "images/her_bokie_bucket_hat_03.jpg"
+        ]
     }
 ];
 
