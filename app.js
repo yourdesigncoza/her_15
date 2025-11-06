@@ -79,85 +79,173 @@ function openChartModal(imageUrl, title) {
 // PRODUCT DATA & CONFIGURATION
 // ===========================================
 const products = [
+    // HER XV VARIANTS
     {
         id: 1,
         name: "Her XV",
-        price: 399,
-        image: "images/resize-medium/HER_XV_White.png",
-        largeImage: "images/resize-large/resized/HER_XV_White.resized.png",
+        price: 320,
+        image: "images/HER_XV_Black.png",
+        largeImage: "images/HER_XV_Black.png",
         collection: "Kick Off"
     },
     {
         id: 2,
-        name: "Her World Cup",
-        price: 399,
-        image: "images/resize-medium/HER_WORLD_CUP_White.png",
-        largeImage: "images/resize-large/resized/RUGBEE_TRY_BLACK_on_White.resized.png",
+        name: "Her XV",
+        price: 320,
+        image: "images/HER_XV_White.resized.png",
+        largeImage: "images/HER_XV_White.resized.png",
         collection: "Kick Off"
     },
+    // HISTORY MAKERS VARIANTS
     {
         id: 3,
         name: "History Makers",
-        price: 399,
-        image: "images/resize-medium/HISTORY_MAKERS_White.png",
-        largeImage: "images/resize-large/resized/HISTORY_MAKERS_White.resized.png",
+        price: 320,
+        image: "images/HISTORY_MAKERS_White.resized.png",
+        largeImage: "images/HISTORY_MAKERS_White.resized.png",
         collection: "Kick Off"
     },
     {
         id: 4,
+        name: "History Makers",
+        price: 320,
+        image: "images/HISTORY_MAKERS_Mint_Green.png",
+        largeImage: "images/HISTORY_MAKERS_Mint_Green.png",
+        collection: "Kick Off"
+    },
+    // BLOM SQUAD VARIANTS
+    {
+        id: 5,
         name: "Blom Squad",
-        price: 399,
-        image: "images/resize-medium/BLOM_SQUAD_White.png",
-        largeImage: "images/resize-large/resized/BLOM_SQUAD_White.resized.png",
+        price: 320,
+        image: "images/BLOM_SQUAD_White.resized.png",
+        largeImage: "images/BLOM_SQUAD_White.resized.png",
         collection: "Kick Off"
     },
     {
-        id: 5,
-        name: "RugBee Honey Black",
-        price: 399,
-        image: "images/resize-medium/RUGBEE_HONEY_BLACK_on_White.png",
-        largeImage: "images/resize-large/resized/RUGBEE_HONEY_BLACK_on_White.resized.png",
-        collection: "Fun XV"
-    },
-    {
         id: 6,
-        name: "RugBee Honey Gold",
-        price: 399,
-        image: "images/resize-medium/RUGBEE_HONEY_GOLD_WHITE.png",
-        largeImage: "images/resize-large/resized/RUGBEE_HONEY_GOLD_WHITE.resized.png",
-        collection: "Fun XV"
+        name: "Blom Squad",
+        price: 320,
+        image: "images/BLOM_SQUAD_Dusty_Pink.png",
+        largeImage: "images/BLOM_SQUAD_Dusty_Pink.png",
+        collection: "Kick Off"
     },
+    // RUGBEE HONEY BLACK VARIANTS
     {
         id: 7,
-        name: "Blom Squad 2.0",
-        price: 399,
-        image: "images/resize-medium/BLOM_SQUAD_2_0_White.png",
-        largeImage: "images/resize-large/resized/BLOM_SQUAD_2_0_White.resized.png",
+        name: "RugBee Honey Black",
+        price: 320,
+        image: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
+        largeImage: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
         collection: "Fun XV"
     },
     {
         id: 8,
-        name: "Rugby Goose",
-        price: 399,
-        image: "images/resize-medium/RUGBY_GOOSE_White.png",
-        largeImage: "images/resize-large/resized/RUGBY_GOOSE_White.resized.png",
+        name: "RugBee Honey Black",
+        price: 320,
+        image: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
+        largeImage: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
         collection: "Fun XV"
     },
+    // BLOM SQUAD 2.0 VARIANTS
     {
         id: 9,
-        name: "RugBee Try Black",
-        price: 399,
-        image: "images/resize-medium/RUGBEE_TRY_BLACK_on_White.png",
-        largeImage: "images/resize-large/resized/RUGBEE_TRY_BLACK_on_White.resized.png",
+        name: "Blom Squad 2.0",
+        price: 320,
+        image: "images/BLOM_SQUAD_2_0_White.png",
+        largeImage: "images/BLOM_SQUAD_2_0_White.png",
         collection: "Fun XV"
     },
     {
         id: 10,
-        name: "RugBee Try Gold",
-        price: 399,
-        image: "images/resize-medium/RUGBEE_TRY_GOLD_on_White.png",
-        largeImage: "images/resize-large/resized/RUGBEE_TRY_GOLD_on_White.resized.png",
+        name: "Blom Squad 2.0",
+        price: 320,
+        image: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
+        largeImage: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
         collection: "Fun XV"
+    },
+    {
+        id: 11,
+        name: "Blom Squad 2.0",
+        price: 320,
+        image: "images/BLOM_SQUAD_2_0_Mint_Green.png",
+        largeImage: "images/BLOM_SQUAD_2_0_Mint_Green.png",
+        collection: "Fun XV"
+    },
+    {
+        id: 12,
+        name: "Blom Squad 2.0",
+        price: 320,
+        image: "images/BLOM_SQUAD_2.0_Sky_Blue.png",
+        largeImage: "images/BLOM_SQUAD_2_0_Sky_Blue.png",
+        collection: "Fun XV"
+    },
+    // RUGBY GOOSE VARIANTS
+    {
+        id: 13,
+        name: "Rugby Goose",
+        price: 320,
+        image: "images/RUGBY_GOOSE_White.resized.png",
+        largeImage: "images/RUGBY_GOOSE_White.resized.png",
+        collection: "Fun XV"
+    },
+    {
+        id: 14,
+        name: "Rugby Goose",
+        price: 320,
+        image: "images/RUGBY_GOOSE_Sky_Blue.png",
+        largeImage: "images/RUGBY_GOOSE_Sky_Blue.png",
+        collection: "Fun XV"
+    },
+    {
+        id: 15,
+        name: "Rugby Goose",
+        price: 320,
+        image: "images/RUGBY_GOOSE_Mint_Green.png",
+        largeImage: "images/RUGBY_GOOSE_Mint_Green.png",
+        collection: "Fun XV"
+    },
+    // RUGBEE TRY BLACK VARIANTS
+    {
+        id: 16,
+        name: "RugBee Try Black",
+        price: 320,
+        image: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
+        largeImage: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
+        collection: "Fun XV"
+    },
+    {
+        id: 17,
+        name: "RugBee Try Black",
+        price: 320,
+        image: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
+        largeImage: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
+        collection: "Fun XV"
+    },
+    // MAIDEN COLLECTION (SINGLE COLOR EACH)
+    {
+        id: 18,
+        name: "Wolfie",
+        price: 320,
+        image: "images/WOLFIE_White.png",
+        largeImage: "images/WOLFIE_White.png",
+        collection: "Maiden"
+    },
+    {
+        id: 19,
+        name: "Kapp",
+        price: 320,
+        image: "images/KAPP_White.png",
+        largeImage: "images/KAPP_White.png",
+        collection: "Maiden"
+    },
+    {
+        id: 20,
+        name: "Brits",
+        price: 320,
+        image: "images/BRITS_White.png",
+        largeImage: "images/BRITS_White.png",
+        collection: "Maiden"
     }
 ];
 
