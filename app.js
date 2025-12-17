@@ -308,6 +308,30 @@ const products = [
             "images/her_bokie_bucket_hat_02.jpg",
             "images/her_bokie_bucket_hat_03.jpg"
         ]
+    },
+    {
+        id: 29,
+        name: "LIBBIE ATHENA BUCKET HAT",
+        price: 450,
+        image: "images/new-bucket-hats/athena-bucket-hat-1.jpg",
+        largeImage: "images/new-bucket-hats/athena-bucket-hat-1.jpg",
+        collection: "Accessories",
+        additionalImages: [
+            "images/new-bucket-hats/athena-bucket-hat-2.jpg",
+            "images/new-bucket-hats/athena-bucket-hat-3.jpg"
+        ]
+    },
+    {
+        id: 30,
+        name: "DAISY BUCKET HAT",
+        price: 350,
+        image: "images/new-bucket-hats/daisy-bucket-hat-2.jpg",
+        largeImage: "images/new-bucket-hats/daisy-bucket-hat-2.jpg",
+        collection: "Accessories",
+        additionalImages: [
+            "images/new-bucket-hats/daisy-bucket-hat-1.jpg",
+            "images/new-bucket-hats/daisy-bucket-hat-2.jpg"
+        ]
     }
 ];
 
@@ -347,9 +371,16 @@ function selectProduct(productId) {
     document.getElementById('selectedProductPrice').textContent = `R${selectedProduct.price}.00`;
 
     // Reset form
-    document.getElementById('productSize').value = '';
+    const sizeSelect = document.getElementById('productSize');
+    sizeSelect.disabled = false;
+    sizeSelect.value = '';
     document.getElementById('productQuantity').value = 1;
     updateItemTotal();
+
+    if (selectedProduct.collection === 'Accessories') {
+        sizeSelect.value = 'One Size';
+        sizeSelect.disabled = true;
+    }
 
     // Show add to cart form
     document.getElementById('addToCartForm').style.display = 'block';
