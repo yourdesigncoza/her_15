@@ -300,7 +300,7 @@ const products = [
     {
         id: 28,
         name: "HER XV Bokkie Bucket Hat",
-        price: 350,
+        price: 300,
         image: "images/her_bokie_bucket_hat_01.jpg",
         largeImage: "images/her_bokie_bucket_hat_01.jpg",
         collection: "Accessories",
@@ -312,7 +312,7 @@ const products = [
     {
         id: 29,
         name: "LIBBIE ATHENA BUCKET HAT",
-        price: 450,
+        price: 350,
         image: "images/new-bucket-hats/athena-bucket-hat-1.jpg",
         largeImage: "images/new-bucket-hats/athena-bucket-hat-1.jpg",
         collection: "Accessories",
@@ -324,7 +324,7 @@ const products = [
     {
         id: 30,
         name: "DAISY BUCKET HAT",
-        price: 350,
+        price: 300,
         image: "images/new-bucket-hats/daisy-bucket-hat-2.jpg",
         largeImage: "images/new-bucket-hats/daisy-bucket-hat-2.jpg",
         collection: "Accessories",

@@ -30,7 +30,7 @@ shield.png
 Use the existing styling as used elsewhere, as well as the existing JavaScript. add these to the "cart" section as well.
 Add the bucket hat to the process-order.php file.
 
-Price of the bucket hat is R350.00
+Price of the bucket hat is R300.00
 Name of bucket hat: 
 HER XV BOKKIE BUCKET HAT
 1st Image:
