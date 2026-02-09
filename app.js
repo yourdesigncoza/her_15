@@ -29,12 +29,6 @@ function openProductModal(largeImageUrl, productTitle, productPrice) {
     document.getElementById('modalProductTitle').textContent = productTitle;
     document.getElementById('modalProductPrice').textContent = productPrice;
 
-    // Show the order button for product images
-    const orderButton = document.querySelector('#productModal .btn-primary-custom');
-    if (orderButton) {
-        orderButton.style.display = 'inline-block';
-    }
-
     var productModal = new bootstrap.Modal(document.getElementById('productModal'));
     productModal.show();
 }
@@ -53,12 +47,6 @@ function openInstagramModal(imageUrl) {
     document.getElementById('modalProductImage').src = imageUrl;
     document.getElementById('modalProductTitle').textContent = 'HER XV Squad';
     document.getElementById('modalProductPrice').textContent = 'STRENGTH. STYLE. SQUAD.';
-
-    // Hide the order button for Instagram images
-    const orderButton = document.querySelector('#productModal .btn-primary-custom');
-    if (orderButton) {
-        orderButton.style.display = 'none';
-    }
 
     var productModal = new bootstrap.Modal(document.getElementById('productModal'));
     productModal.show();
@@ -79,28 +67,48 @@ function openChartModal(imageUrl, title) {
 // PRODUCT DATA & CONFIGURATION
 // ===========================================
 const products = [
+    // THE MATCHDAY XV COLLECTION
+    {
+        id: 31,
+        name: "Sharks Golfer",
+        price: 500,
+        image: "images/sharks_golfer/sharks_golfer.jpg",
+        largeImage: "images/sharks_golfer/sharks_golfer.jpg",
+        collection: "Matchday XV"
+    },
+    {
+        id: 32,
+        name: "Sharks Golfer (Customize: Add Name & Number)",
+        price: 550,
+        image: "images/sharks_golfer/sharks_golfer_ustomize.jpg",
+        largeImage: "images/sharks_golfer/sharks_golfer_ustomize.jpg",
+        collection: "Matchday XV",
+        customizable: true
+    },
     // HER XV VARIANTS
     {
         id: 1,
         name: "Her XV",
-        price: 320,
+        price: 250,
         image: "images/HER_XV_Black.png",
         largeImage: "images/HER_XV_Black.png",
-        collection: "Kick Off"
+        collection: "Kick Off",
+        soldOut: true
     },
     {
         id: 2,
         name: "Her XV",
-        price: 320,
+        price: 250,
         image: "images/HER_XV_White.resized.png",
         largeImage: "images/HER_XV_White.resized.png",
-        collection: "Kick Off"
+        collection: "Kick Off",
+        soldOut: true
     },
     // HISTORY MAKERS VARIANTS
     {
         id: 3,
         name: "History Makers",
-        price: 320,
+        price: 250,
         image: "images/HISTORY_MAKERS_White.resized.png",
         largeImage: "images/HISTORY_MAKERS_White.resized.png",
         collection: "Kick Off"
@@ -109,24 +117,16 @@ const products = [
     {
         id: 5,
         name: "Blom Squad",
-        price: 320,
+        price: 250,
         image: "images/BLOM_SQUAD_White.resized.png",
         largeImage: "images/BLOM_SQUAD_White.resized.png",
-        collection: "Kick Off"
-    },
-    {
-        id: 6,
-        name: "Blom Squad",
-        price: 320,
-        image: "images/BLOM_SQUAD_Dusty_Pink.png",
-        largeImage: "images/BLOM_SQUAD_Dusty_Pink.png",
         collection: "Kick Off"
     },
     // RUGBEE HONEY BLACK VARIANTS
     {
         id: 7,
         name: "RugBee Honey Black",
-        price: 320,
+        price: 250,
         image: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
         largeImage: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
         collection: "Fun XV"
@@ -134,7 +134,7 @@ const products = [
     {
         id: 8,
         name: "RugBee Honey Black",
-        price: 320,
+        price: 250,
         image: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
         largeImage: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
         collection: "Fun XV"
@@ -143,7 +143,7 @@ const products = [
     {
         id: 9,
         name: "Blom Squad 2.0",
-        price: 320,
+        price: 250,
         image: "images/BLOM_SQUAD_2_0_White.png",
         largeImage: "images/BLOM_SQUAD_2_0_White.png",
         collection: "Fun XV"
@@ -151,7 +151,7 @@ const products = [
     {
         id: 10,
         name: "Blom Squad 2.0",
-        price: 320,
+        price: 250,
         image: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
         largeImage: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
         collection: "Fun XV"
@@ -159,7 +159,7 @@ const products = [
     {
         id: 11,
         name: "Blom Squad 2.0",
-        price: 320,
+        price: 250,
         image: "images/BLOM_SQUAD_2_0_Mint_Green.png",
         largeImage: "images/BLOM_SQUAD_2_0_Mint_Green.png",
         collection: "Fun XV"
@@ -167,7 +167,7 @@ const products = [
     {
         id: 12,
         name: "Blom Squad 2.0",
-        price: 320,
+        price: 250,
         image: "images/BLOM_SQUAD_2.0_Sky_Blue.png",
         largeImage: "images/BLOM_SQUAD_2_0_Sky_Blue.png",
         collection: "Fun XV"
@@ -176,32 +176,16 @@ const products = [
     {
         id: 13,
         name: "Rugby Goose",
-        price: 320,
+        price: 250,
         image: "images/RUGBY_GOOSE_White.resized.png",
         largeImage: "images/RUGBY_GOOSE_White.resized.png",
-        collection: "Fun XV"
-    },
-    {
-        id: 14,
-        name: "Rugby Goose",
-        price: 320,
-        image: "images/RUGBY_GOOSE_Sky_Blue.png",
-        largeImage: "images/RUGBY_GOOSE_Sky_Blue.png",
-        collection: "Fun XV"
-    },
-    {
-        id: 15,
-        name: "Rugby Goose",
-        price: 320,
-        image: "images/RUGBY_GOOSE_Mint_Green.png",
-        largeImage: "images/RUGBY_GOOSE_Mint_Green.png",
         collection: "Fun XV"
     },
     // RUGBEE TRY BLACK VARIANTS
     {
         id: 16,
         name: "RugBee Try Black",
-        price: 320,
+        price: 250,
         image: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
         largeImage: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
         collection: "Fun XV"
@@ -209,7 +193,7 @@ const products = [
     {
         id: 17,
         name: "RugBee Try Black",
-        price: 320,
+        price: 250,
         image: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
         largeImage: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
         collection: "Fun XV"
@@ -218,15 +202,16 @@ const products = [
     {
         id: 18,
         name: "Wolfie",
-        price: 320,
+        price: 250,
         image: "images/WOLFIE_White.png",
         largeImage: "images/WOLFIE_White.png",
-        collection: "Maiden"
+        collection: "Maiden",
+        soldOut: true
     },
     {
         id: 19,
         name: "Kapp",
-        price: 320,
+        price: 250,
         image: "images/KAPP_White.png",
         largeImage: "images/KAPP_White.png",
         collection: "Maiden"
@@ -234,7 +219,7 @@ const products = [
     {
         id: 20,
         name: "Brits",
-        price: 320,
+        price: 250,
         image: "images/BRITS_White.png",
         largeImage: "images/BRITS_White.png",
         collection: "Maiden"
@@ -243,7 +228,7 @@ const products = [
     {
         id: 21,
         name: "Everyone Watches Womens Rugby",
-        price: 320,
+        price: 250,
         image: "images/everyone_watches_womens_rugby_white.png",
         largeImage: "images/everyone_watches_womens_rugby_white.png",
         collection: "Shield"
@@ -251,7 +236,7 @@ const products = [
     {
         id: 22,
         name: "Everyone Watches Womens Rugby",
-        price: 320,
+        price: 250,
         image: "images/everyone_watches_womens_rugby_black.png",
         largeImage: "images/everyone_watches_womens_rugby_black.png",
         collection: "Shield"
@@ -259,7 +244,7 @@ const products = [
     {
         id: 23,
         name: "Springbok Women",
-        price: 320,
+        price: 250,
         image: "images/springbok_woman.png",
         largeImage: "images/springbok_woman.png",
         collection: "Shield"
@@ -267,7 +252,7 @@ const products = [
     {
         id: 24,
         name: "Tackle The Stigma",
-        price: 320,
+        price: 250,
         image: "images/tackle_the_stigma.png",
         largeImage: "images/tackle_the_stigma.png",
         collection: "Shield"
@@ -275,25 +260,9 @@ const products = [
     {
         id: 25,
         name: "Womenboks",
-        price: 320,
+        price: 250,
         image: "images/womenboks.png",
         largeImage: "images/womenboks.png",
-        collection: "Shield"
-    },
-    {
-        id: 26,
-        name: "Girl Power",
-        price: 320,
-        image: "images/girl_power.png",
-        largeImage: "images/girl_power.png",
-        collection: "Shield"
-    },
-    {
-        id: 27,
-        name: "Shield",
-        price: 320,
-        image: "images/shield.png",
-        largeImage: "images/shield.png",
         collection: "Shield"
     },
     // BUCKET HAT
@@ -346,6 +315,8 @@ function populateProducts() {
     const productGrid = document.getElementById('productSelection');
 
     products.forEach(product => {
+        if (product.soldOut) return;
+
         const productCard = `
             <div class="col-xl-15 col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
                 <div class="card h-100 product-select-card-compact" onclick="selectProduct(${product.id})" style="cursor: pointer;">
@@ -365,6 +336,8 @@ function populateProducts() {
 function selectProduct(productId) {
     selectedProduct = products.find(p => p.id === productId);
 
+    if (selectedProduct.soldOut) return;
+
     // Update selected product display
     document.getElementById('selectedProductImage').src = selectedProduct.image;
     document.getElementById('selectedProductName').textContent = selectedProduct.name;
@@ -380,6 +353,15 @@ function selectProduct(productId) {
     if (selectedProduct.collection === 'Accessories') {
         sizeSelect.value = 'One Size';
         sizeSelect.disabled = true;
+    }
+
+    // Show/hide customization input
+    const customizeInput = document.getElementById('customizeDetails');
+    if (customizeInput) {
+        customizeInput.style.display = selectedProduct.customizable ? 'block' : 'none';
+        if (!selectedProduct.customizable) {
+            document.getElementById('customizeName').value = '';
+        }
     }
 
     // Show add to cart form
@@ -424,6 +406,10 @@ function addToCart() {
         return;
     }
 
+    // Get customization details if applicable
+    const customizeNameEl = document.getElementById('customizeName');
+    const customizeText = (selectedProduct.customizable && customizeNameEl) ? customizeNameEl.value.trim() : '';
+
     const cartItem = {
         id: Date.now(), // Unique cart item ID
         productId: selectedProduct.id,
@@ -432,7 +418,8 @@ function addToCart() {
         size: size,
         quantity: quantity,
         image: selectedProduct.image,
-        total: selectedProduct.price * quantity
+        total: selectedProduct.price * quantity,
+        customization: customizeText
     };
 
     cart.push(cartItem);
@@ -476,7 +463,7 @@ function updateCartDisplay() {
                     </div>
                     <div class="col">
                         <h6 class="mb-1">${item.name}</h6>
-                        <small class="text-muted">Size: ${item.size} | Qty: ${item.quantity}</small>
+                        <small class="text-muted">Size: ${item.size} | Qty: ${item.quantity}${item.customization ? ' | Custom: ' + item.customization : ''}</small>
                         <p class="mb-0 fw-bold">R${item.total}.00</p>
                     </div>
                     <div class="col-auto">
