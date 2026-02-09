@@ -90,8 +90,8 @@ const products = [
         id: 1,
         name: "Her XV",
         price: 250,
-        image: "images/HER_XV_Black.png",
-        largeImage: "images/HER_XV_Black.png",
+        image: "images/HER_XV_Black.jpg",
+        largeImage: "images/HER_XV_Black.jpg",
         collection: "Kick Off",
         soldOut: true
     },
@@ -99,8 +99,8 @@ const products = [
         id: 2,
         name: "Her XV",
         price: 250,
-        image: "images/HER_XV_White.resized.png",
-        largeImage: "images/HER_XV_White.resized.png",
+        image: "images/HER_XV_White.resized.jpg",
+        largeImage: "images/HER_XV_White.resized.jpg",
         collection: "Kick Off",
         soldOut: true
     },
@@ -109,8 +109,8 @@ const products = [
         id: 3,
         name: "History Makers",
         price: 250,
-        image: "images/HISTORY_MAKERS_White.resized.png",
-        largeImage: "images/HISTORY_MAKERS_White.resized.png",
+        image: "images/HISTORY_MAKERS_White.resized.jpg",
+        largeImage: "images/HISTORY_MAKERS_White.resized.jpg",
         collection: "Kick Off"
     },
     // BLOM SQUAD VARIANTS
@@ -118,8 +118,8 @@ const products = [
         id: 5,
         name: "Blom Squad",
         price: 250,
-        image: "images/BLOM_SQUAD_White.resized.png",
-        largeImage: "images/BLOM_SQUAD_White.resized.png",
+        image: "images/BLOM_SQUAD_White.resized.jpg",
+        largeImage: "images/BLOM_SQUAD_White.resized.jpg",
         collection: "Kick Off"
     },
     // RUGBEE HONEY BLACK VARIANTS
@@ -127,16 +127,16 @@ const products = [
         id: 7,
         name: "RugBee Honey Black",
         price: 250,
-        image: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
-        largeImage: "images/RUGBEE_HONEY_BLACK_on_White.resized.png",
+        image: "images/RUGBEE_HONEY_BLACK_on_White.resized.jpg",
+        largeImage: "images/RUGBEE_HONEY_BLACK_on_White.resized.jpg",
         collection: "Fun XV"
     },
     {
         id: 8,
         name: "RugBee Honey Black",
         price: 250,
-        image: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
-        largeImage: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.png",
+        image: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.jpg",
+        largeImage: "images/RUGBEE_HONEY_BLACK_Dusty_Pink.jpg",
         collection: "Fun XV"
     },
     // BLOM SQUAD 2.0 VARIANTS
@@ -144,32 +144,32 @@ const products = [
         id: 9,
         name: "Blom Squad 2.0",
         price: 250,
-        image: "images/BLOM_SQUAD_2_0_White.png",
-        largeImage: "images/BLOM_SQUAD_2_0_White.png",
+        image: "images/BLOM_SQUAD_2_0_White.jpg",
+        largeImage: "images/BLOM_SQUAD_2_0_White.jpg",
         collection: "Fun XV"
     },
     {
         id: 10,
         name: "Blom Squad 2.0",
         price: 250,
-        image: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
-        largeImage: "images/BLOM_SQUAD_2_0_Dusty_Pink.png",
+        image: "images/BLOM_SQUAD_2_0_Dusty_Pink.jpg",
+        largeImage: "images/BLOM_SQUAD_2_0_Dusty_Pink.jpg",
         collection: "Fun XV"
     },
     {
         id: 11,
         name: "Blom Squad 2.0",
         price: 250,
-        image: "images/BLOM_SQUAD_2_0_Mint_Green.png",
-        largeImage: "images/BLOM_SQUAD_2_0_Mint_Green.png",
+        image: "images/BLOM_SQUAD_2_0_Mint_Green.jpg",
+        largeImage: "images/BLOM_SQUAD_2_0_Mint_Green.jpg",
         collection: "Fun XV"
     },
     {
         id: 12,
         name: "Blom Squad 2.0",
         price: 250,
-        image: "images/BLOM_SQUAD_2.0_Sky_Blue.png",
-        largeImage: "images/BLOM_SQUAD_2_0_Sky_Blue.png",
+        image: "images/BLOM_SQUAD_2.0_Sky_Blue.jpg",
+        largeImage: "images/BLOM_SQUAD_2_0_Sky_Blue.jpg",
         collection: "Fun XV"
     },
     // RUGBY GOOSE VARIANTS
@@ -177,8 +177,8 @@ const products = [
         id: 13,
         name: "Rugby Goose",
         price: 250,
-        image: "images/RUGBY_GOOSE_White.resized.png",
-        largeImage: "images/RUGBY_GOOSE_White.resized.png",
+        image: "images/RUGBY_GOOSE_White.resized.jpg",
+        largeImage: "images/RUGBY_GOOSE_White.resized.jpg",
         collection: "Fun XV"
     },
     // RUGBEE TRY BLACK VARIANTS
@@ -186,16 +186,16 @@ const products = [
         id: 16,
         name: "RugBee Try Black",
         price: 250,
-        image: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
-        largeImage: "images/RUGBEE_TRY_BLACK_on_White.resized.png",
+        image: "images/RUGBEE_TRY_BLACK_on_White.resized.jpg",
+        largeImage: "images/RUGBEE_TRY_BLACK_on_White.resized.jpg",
         collection: "Fun XV"
     },
     {
         id: 17,
         name: "RugBee Try Black",
         price: 250,
-        image: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
-        largeImage: "images/RUGBEE_TRY_BLACK_Dusty_Pink.png",
+        image: "images/RUGBEE_TRY_BLACK_Dusty_Pink.jpg",
+        largeImage: "images/RUGBEE_TRY_BLACK_Dusty_Pink.jpg",
         collection: "Fun XV"
     },
     // MAIDEN COLLECTION (SINGLE COLOR EACH)
@@ -203,8 +203,8 @@ const products = [
         id: 18,
         name: "Wolfie",
         price: 250,
-        image: "images/WOLFIE_White.png",
-        largeImage: "images/WOLFIE_White.png",
+        image: "images/WOLFIE_White.jpg",
+        largeImage: "images/WOLFIE_White.jpg",
         collection: "Maiden",
         soldOut: true
     },
@@ -212,16 +212,16 @@ const products = [
         id: 19,
         name: "Kapp",
         price: 250,
-        image: "images/KAPP_White.png",
-        largeImage: "images/KAPP_White.png",
+        image: "images/KAPP_White.jpg",
+        largeImage: "images/KAPP_White.jpg",
         collection: "Maiden"
     },
     {
         id: 20,
         name: "Brits",
         price: 250,
-        image: "images/BRITS_White.png",
-        largeImage: "images/BRITS_White.png",
+        image: "images/BRITS_White.jpg",
+        largeImage: "images/BRITS_White.jpg",
         collection: "Maiden"
     },
     // HER XV SHIELD COLLECTION
@@ -229,40 +229,40 @@ const products = [
         id: 21,
         name: "Everyone Watches Womens Rugby",
         price: 250,
-        image: "images/everyone_watches_womens_rugby_white.png",
-        largeImage: "images/everyone_watches_womens_rugby_white.png",
+        image: "images/everyone_watches_womens_rugby_white.jpg",
+        largeImage: "images/everyone_watches_womens_rugby_white.jpg",
         collection: "Shield"
     },
     {
         id: 22,
         name: "Everyone Watches Womens Rugby",
         price: 250,
-        image: "images/everyone_watches_womens_rugby_black.png",
-        largeImage: "images/everyone_watches_womens_rugby_black.png",
+        image: "images/everyone_watches_womens_rugby_black.jpg",
+        largeImage: "images/everyone_watches_womens_rugby_black.jpg",
         collection: "Shield"
     },
     {
         id: 23,
         name: "Springbok Women",
         price: 250,
-        image: "images/springbok_woman.png",
-        largeImage: "images/springbok_woman.png",
+        image: "images/springbok_woman.jpg",
+        largeImage: "images/springbok_woman.jpg",
         collection: "Shield"
     },
     {
         id: 24,
         name: "Tackle The Stigma",
         price: 250,
-        image: "images/tackle_the_stigma.png",
-        largeImage: "images/tackle_the_stigma.png",
+        image: "images/tackle_the_stigma.jpg",
+        largeImage: "images/tackle_the_stigma.jpg",
         collection: "Shield"
     },
     {
         id: 25,
         name: "Womenboks",
         price: 250,
-        image: "images/womenboks.png",
-        largeImage: "images/womenboks.png",
+        image: "images/womenboks.jpg",
+        largeImage: "images/womenboks.jpg",
         collection: "Shield"
     },
     // BUCKET HAT
