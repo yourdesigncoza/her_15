@@ -138,6 +138,41 @@ body {
     transform: scale(1.1);
 }
 
+/* Sold Out Product Styles */
+.product-card.sold-out {
+    filter: grayscale(60%);
+    opacity: 0.75;
+}
+
+.product-card.sold-out:hover {
+    transform: none;
+}
+
+.product-card.sold-out .product-image:hover {
+    transform: none;
+}
+
+.product-card.sold-out .product-image:hover img {
+    transform: none;
+}
+
+.sold-out-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(220, 53, 69, 0.9);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    z-index: 2;
+    pointer-events: none;
+}
+
 .squad-section {
     padding: 100px 0;
     background-color: var(--primary-black);
