@@ -20,7 +20,7 @@ This is a Bootstrap 5 landing page for **HER XV**, a women's rugby apparel brand
 - `styles.css` - Custom CSS with CSS variables for brand colors
 - `phoenix.css` - Additional styling framework
 - `process-order.php` - Backend order processing with PHPMailer
-- `images/` - Product images, brand assets, and header backgrounds
+- `images/` - Product images (JPEG Q85), brand assets, and header backgrounds
 - `.factory/` or `design-inspiration/` - Reference materials (do not modify)
 
 ### CSS Architecture
@@ -48,6 +48,7 @@ Prices vary by product (R250–R550). Available sizes: S, M, L, XL, XXL. Some pr
 - **Completed**: Full interactive order form with cart system, email processing via PHP
 - **Email System**: Fully functional with PHPMailer using SMTP
 - **Cart System**: Multi-product cart with size/quantity selection
+- **Images**: All product images are JPEG Q85, max 800px wide (~3.8MB total)
 
 ## Key Components
 
@@ -200,7 +201,7 @@ showOrderModal(title, message, type)  // Display success/error modal
 ├── To-Do.md               # Development roadmap (may be outdated)
 ├── images/                # Product and brand images
 │   ├── instagram/         # Squad member images
-│   └── *.png             # Product images
+│   └── *.jpg             # Product images (JPEG Q85)
 ├── logs/                  # Application logs
 │   ├── orders.log
 │   ├── errors.log
@@ -213,7 +214,7 @@ showOrderModal(title, message, type)  // Display success/error modal
 ### Adding New Products
 1. Add product object to `products` array in `app.js`
 2. Add corresponding HTML card in `index.html` with correct `onclick="openProductModalById(X)"`
-3. Ensure product images exist in `images/` directory
+3. Ensure product images exist in `images/` directory as `.jpg` (JPEG Q85, max 800px)
 4. Use `soldOut: true` if the product is unavailable
 5. Use `customizable: true` if the product supports name/number personalization
 6. Update product count in this documentation
