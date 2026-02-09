@@ -155,6 +155,7 @@ try {
         $cart[$index]['size'] = htmlspecialchars($item['size'], ENT_QUOTES, 'UTF-8');
         $cart[$index]['quantity'] = (int)$item['quantity'];
         $cart[$index]['total'] = (float)$item['total'];
+        $cart[$index]['customization'] = htmlspecialchars($item['customization'] ?? '', ENT_QUOTES, 'UTF-8');
         $grandTotal += $cart[$index]['total'];
 
         // Debug: Log each item after processing
@@ -196,12 +197,17 @@ try {
             'name' => $item['name'],
             'size' => $item['size'],
             'quantity' => $item['quantity'],
-            'total' => $item['total']
+            'total' => $item['total'],
+            'customization' => $item['customization'] ?? ''
         ]);
+
+        $customizationHtml = !empty($item['customization'])
+            ? "<br><small style='color: #666;'>Customization: {$item['customization']}</small>"
+            : '';
 
         $orderItemsHtml .= "
             <tr>
-                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>{$item['name']}</td>
+                <td style='padding: 10px; border-bottom: 1px solid #ddd;'>{$item['name']}{$customizationHtml}</td>
                 <td style='padding: 10px; border-bottom: 1px solid #ddd; text-align: center;'>{$item['size']}</td>
                 <td style='padding: 10px; border-bottom: 1px solid #ddd; text-align: center;'>{$item['quantity']}</td>
                 <td style='padding: 10px; border-bottom: 1px solid #ddd; text-align: right;'>R" . number_format($item['total'], 2) . "</td>
@@ -368,7 +374,16 @@ try {
         'customer' => $customerName,
         'email' => $customerEmail,
         'total' => $grandTotal,
-        'items_count' => count($cart)
+        'items_count' => count($cart),
+        'items' => array_map(function($item) {
+            return [
+                'name' => $item['name'],
+                'size' => $item['size'],
+                'quantity' => $item['quantity'],
+                'total' => $item['total'],
+                'customization' => $item['customization'] ?? ''
+            ];
+        }, $cart)
     ]);
 
     // Return success response
