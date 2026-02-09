@@ -35,11 +35,14 @@ Uses CSS custom properties for consistent theming:
 ```
 
 ### Product Collections
-1. **The Kick Off Collection** - 6 products (Her XV, History Makers, Blom Squad variants)
-2. **The Fun XV Collection** - 11 products (RugBee Honey, Blom Squad 2.0, Rugby Goose, RugBee Try variants)
-3. **The Maiden Collection** - 3 products (Wolfie, Kapp, Brits)
+1. **The Matchday XV Collection** - 2 products (Sharks Golfer, Sharks Golfer Customize)
+2. **The Kick Off Collection** - 4 products (Her XV, History Makers, Blom Squad variants)
+3. **The Fun XV Collection** - 9 products (RugBee Honey, Blom Squad 2.0, Rugby Goose, RugBee Try variants)
+4. **The Maiden Collection** - 3 products (Wolfie, Kapp, Brits)
+5. **The Shield Collection** - 5 products
+6. **Accessories** - 3 products
 
-All products are priced at R320.00 and available in sizes S, M, L, XL, XXL.
+Prices vary by product (R250–R550). Available sizes: S, M, L, XL, XXL. Some products support `customizable: true` (name/number personalization) and some are marked `soldOut: true`.
 
 ### Current Implementation Status
 - **Completed**: Full interactive order form with cart system, email processing via PHP
@@ -49,12 +52,14 @@ All products are priced at R320.00 and available in sizes S, M, L, XL, XXL.
 ## Key Components
 
 ### Product Data Structure
-Products are defined in `app.js` in the `products` array (lines 81-250). Each product has:
+Products are defined in `app.js` in the `products` array. Each product has:
 - `id` - Unique product identifier
 - `name` - Product name
-- `price` - Price in ZAR (R320)
+- `price` - Price in ZAR (varies per product)
 - `image` & `largeImage` - Image paths
-- `collection` - "Kick Off", "Fun XV", or "Maiden"
+- `collection` - "Matchday XV", "Kick Off", "Fun XV", "Maiden", "Shield", or "Accessories"
+- `customizable` (optional) - Allows name/number personalization
+- `soldOut` (optional) - Marks product as sold out (greyed out, non-selectable)
 
 ### Cart System Architecture
 The cart system in `app.js` includes:
@@ -66,9 +71,9 @@ The cart system in `app.js` includes:
 - `clearCart()` - Clears all cart items with confirmation
 
 ### Modal Functions
-- `openProductModal(largeImageUrl, productTitle, productPrice)` - Opens Bootstrap modal for product viewing
+- `openProductModal(largeImageUrl, productTitle, productPrice)` - Opens Bootstrap modal showing enlarged image, title, and price
 - `openProductModalById(productId)` - Opens modal using product ID from products array
-- `openInstagramModal(imageUrl)` - Opens modal for squad/Instagram images
+- `openInstagramModal(imageUrl)` - Opens modal for squad/Instagram images (reuses product modal)
 - `openChartModal(imageUrl, title)` - Opens modal for size charts
 
 ### Order Processing Flow
@@ -133,7 +138,7 @@ tail -f logs/spam.log
 - Product selection and "Add to Cart" functionality
 - Size and quantity selection
 - Cart item addition/removal
-- Cart total calculations (R320 × quantity)
+- Cart total calculations (price × quantity)
 - Customer form validation (name, email, phone, city required)
 - Order submission and email delivery
 - Mobile responsive design and navbar behavior
@@ -206,10 +211,12 @@ showOrderModal(title, message, type)  // Display success/error modal
 ## Important Notes
 
 ### Adding New Products
-1. Add product object to `products` array in `app.js` (lines 81-250)
+1. Add product object to `products` array in `app.js`
 2. Add corresponding HTML card in `index.html` with correct `onclick="openProductModalById(X)"`
 3. Ensure product images exist in `images/` directory
-4. Update product count in this documentation
+4. Use `soldOut: true` if the product is unavailable
+5. Use `customizable: true` if the product supports name/number personalization
+6. Update product count in this documentation
 
 ### Modifying Email Templates
 Email templates are hardcoded in `process-order.php`. To modify:
